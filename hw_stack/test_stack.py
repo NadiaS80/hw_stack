@@ -2,8 +2,16 @@ import unittest
 from stack_balance_check import balanced
 
 class TestStack(unittest.TestCase):
+    """
+    Unit tests for bracket balance checking using parameterized test cases.
+    """
 
     def test_balanced(self):
+        """
+        Test multiple balanced and unbalanced bracket sequences.
+        Verifies that the balance checking function returns expected results
+        for different input cases.
+        """
         params = [
     ('[([])((([[[]]])))]{()}', 'Сбалансированно'),
     ('(((([{}]))))', 'Сбалансированно'),
