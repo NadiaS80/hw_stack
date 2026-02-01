@@ -1,8 +1,8 @@
 import email
 import smtplib
 import imaplib
-from email.MIMEText import MIMEText
-from email.MIMEMultipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 
 class MailClient:
@@ -20,7 +20,7 @@ class MailClient:
         self.password = password
         self.smtp_address = smtp_address
         self.imap_address = imap_address
-        
+
 
     def send_message(self, subject, recipients, message):
         """
